@@ -13,9 +13,12 @@ A Minecraft Paper plugin that enhances the farming experience.
 
 ## Requirements
 
-- **Minecraft**: 1.21+
-- **Server**: Paper (or Spigot) with API version 1.21+
-- **Java**: 21+
+- **Minecraft**: 26.2
+- **Server**: Paper 26.2 build 40 (`26.2-40-dev/26.2@6d23ced`)
+- **Paper API**: `26.2.build.40-alpha`
+- **Java runtime**: 25+
+- **Java compiler target**: 21
+- **Optional integration**: VeinMiner 2.4.0
 
 ## Installation
 
