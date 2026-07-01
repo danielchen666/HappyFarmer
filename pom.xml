@@ -6,7 +6,7 @@
 
     <groupId>me.happyfarmer</groupId>
     <artifactId>happyfarmer</artifactId>
-    <version>0.3</version>
+    <version>0.4</version>
     <packaging>jar</packaging>
 
     <name>HappyFarmer</name>
@@ -28,7 +28,7 @@
     </dependencies>
 
     <build>
-        <finalName>happyfarmer-v0.3</finalName>
+        <finalName>happyfarmer-v0.4</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>

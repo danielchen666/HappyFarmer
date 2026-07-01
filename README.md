@@ -5,7 +5,6 @@ A Minecraft Paper plugin that enhances the farming experience.
 ## Features
 
 - **Crop Harvest & Replant**: Right-click a mature crop with a hoe to harvest and automatically replant (consumes 1 seed from inventory).
-- **Sapling Growth Control**: Only player-placed saplings grow into trees naturally. Bonemeal still works on any sapling.
 - **Custom Composting**: Additional items can be composted in vanilla composters (e.g. meat, cooked food, feathers, golden apples).
 - **Furnace Bread**: Replaces the vanilla bread crafting recipe with a furnace recipe (1 wheat → 1 bread, 200 ticks, 0.35 XP).
 
@@ -33,7 +32,7 @@ The compiled jar will be in `target/happyfarmer-v0.3.jar`.
 
 ## Configuration
 
-Player-placed sapling data is stored in `plugins/HappyFarmer/player_placed_saplings.yml`. This file is managed automatically — do not edit it while the server is running.
+The plugin is configured via `plugin.yml` and uses default Minecraft settings for farming.
 
 ## License
 

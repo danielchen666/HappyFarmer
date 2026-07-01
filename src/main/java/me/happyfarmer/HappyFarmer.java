@@ -14,7 +14,6 @@ public class HappyFarmer extends JavaPlugin {
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(new CropHarvestListener(), this);
-        getServer().getPluginManager().registerEvents(new SaplingGrowListener(this), this);
         getServer().getPluginManager().registerEvents(new CompostListener(), this);
 
         Bukkit.removeRecipe(NamespacedKey.minecraft("bread"));
