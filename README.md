@@ -18,7 +18,9 @@ A Minecraft Paper plugin that enhances the farming experience.
 - **Paper API**: `26.2.build.40-alpha`
 - **Java runtime**: 25+
 - **Java compiler target**: 21
-- **Optional integration**: VeinMiner 2.4.0
+- **Optional integration**: [VeinMiner 2.4.0](https://github.com/2008Choco/VeinMiner)
+
+VeinMiner is optional. HappyFarmer starts normally without it, but crop-area replanting requires VeinMiner's hoe crop harvesting feature.
 
 ## Installation
 
