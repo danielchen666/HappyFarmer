@@ -15,8 +15,7 @@ A Minecraft Paper plugin that enhances the farming experience.
 
 - Minecraft: 26.2
 - Server: Paper 26.2 build 40
-- Paper API: 26.2.build.40-alpha
-- Java runtime: 25+, compiler target: 21
+- Java runtime: 25+
 - Optional: [VeinMiner 2.4.0](https://github.com/2008Choco/VeinMiner) for area replanting
 
 ## Installation
