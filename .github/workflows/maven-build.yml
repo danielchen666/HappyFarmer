@@ -27,4 +27,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: happyfarmer
-          path: target/happyfarmer-v0.3.jar
+          path: target/*.jar
