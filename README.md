@@ -1,47 +1,48 @@
-# Daniel's HappyFarmer
+# HappyFarmer
 
-A Minecraft Paper plugin that enhances the farming experience.
+![Version](https://img.shields.io/github/v/release/danielchen666/HappyFarmer?label=version)
+![License](https://img.shields.io/github/license/danielchen666/HappyFarmer)
+![Java](https://img.shields.io/badge/Java-21%2B-orange)
+![Minecraft](https://img.shields.io/badge/Minecraft-26.2-blue)
 
-## Features
+A modern Minecraft Paper plugin designed to enhance the farming experience with automated replanting, custom composting, and nether-themed utilities.
 
-- **Crop Harvest & Replant**: Left-click a mature crop with a hoe to harvest and automatically replant (consumes 1 seed from inventory).
-- **VeinMiner Compatibility**: When VeinMiner harvests mature crops with a hoe, HappyFarmer replants the harvested crop area using seeds from the player's inventory.
-- **Custom Composting**: Additional items can be composted in vanilla composters (e.g. meat, cooked food, feathers, golden apples).
-- **Furnace Bread**: Replaces the vanilla bread crafting recipe with a furnace recipe (1 wheat → 1 bread, 200 ticks, 0.35 XP).
-- **NextGenNether Recipes**: Craft a Shulker Box with a Chest surrounded by Netherrack, and an Ender Chest with a Chest surrounded by Blackstone.
-- **Netherrack Fuel**: Netherrack can be used as furnace fuel for 300 ticks.
+## ✨ Features
 
-## Requirements
+- 🌾 **Smart Harvest**: Left-click mature crops with a hoe to harvest and instantly replant.
+- 🔗 **VeinMiner Integration**: Support for bulk replanting when using [VeinMiner](https://github.com/2008Choco/VeinMiner).
+- ♻️ **Enhanced Composting**: Add meat, cooked foods, and rare items to composters.
+- 🍞 **Furnace Bread**: New furnace recipe: `1 Wheat` $\rightarrow$ `1 Bread`.
+- 🔥 **Nether Utilities**:
+  - **Shulker Box**: Craftable with a Chest surrounded by Netherrack.
+  - **Ender Chest**: Craftable with a Chest surrounded by Blackstone.
+  - **Netherrack Fuel**: Netherrack now burns in furnaces (300 ticks).
 
-- **Minecraft**: 26.2
-- **Server**: Paper 26.2 build 40 (`26.2-40-dev/26.2@6d23ced`)
-- **Paper API**: `26.2.build.40-alpha`
-- **Java runtime**: 25+
-- **Java compiler target**: 21
-- **Optional integration**: [VeinMiner 2.4.0](https://github.com/2008Choco/VeinMiner)
+## ⚙️ Requirements
 
-VeinMiner is optional. HappyFarmer starts normally without it, but crop-area replanting requires VeinMiner's hoe crop harvesting feature.
+| Component | Version |
+| :--- | :--- |
+| **Minecraft** | `26.2` |
+| **Server** | Paper `26.2 build 40` |
+| **Java Runtime** | `25+` |
+| **API** | `26.2.build.40-alpha` |
+| **VeinMiner** | `2.4.0` (Optional) |
 
-## Installation
+## 🚀 Installation
 
-1. Download the latest `happyfarmer-v0.5.jar` from [Releases](https://github.com/danielchen666/daniels-happyfarmer/releases).
-2. Place the jar in your server's `plugins/` directory.
-3. Restart the server.
+1. Download the latest `.jar` from the [Releases](https://github.com/danielchen666/HappyFarmer/releases) page.
+2. Drop the file into your server's `plugins/` folder.
+3. Restart your server.
 
-## Building from Source
+## 🛠️ Building from Source
 
 ```bash
-git clone https://github.com/danielchen666/daniels-happyfarmer.git
-cd daniels-happyfarmer
+git clone https://github.com/danielchen666/HappyFarmer.git
+cd HappyFarmer
 mvn package
 ```
+The compiled jar will be available at `target/happyfarmer-v0.5.jar`.
 
-The compiled jar will be in `target/happyfarmer-v0.5.jar`.
+## 📄 License
 
-## Configuration
-
-The plugin is configured via `plugin.yml` and uses default Minecraft settings for farming.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+Distributed under the [MIT License](LICENSE).
