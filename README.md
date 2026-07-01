@@ -1,37 +1,40 @@
-<a href="https://github.com/danielchen666/HappyFarmer/releases/latest" alt="Latest release">
-    <img src="https://img.shields.io/github/v/release/danielchen666/HappyFarmer?include_prereleases" alt="Latest release">
-</a>
-<a href="LICENSE" alt="License">
-    <img src="https://img.shields.io/github/license/danielchen666/HappyFarmer" alt="License">
-</a>
+# Daniel's HappyFarmer
 
-# HappyFarmer
+A Minecraft Paper plugin that enhances the farming experience.
 
-A Minecraft Paper plugin that enhances farming, adds nether recipes, and integrates with VeinMiner for mass crop replanting.
+## Features
 
-🪴 Left-click mature crops with a hoe → harvest & replant (consumes 1 seed)  
-⛏️ VeinMiner mass harvest → replants the whole area in one pass  
-🧪 Expanded composting (meat, feathers, golden apples, and more)  
-🍞 Furnace bread: 1 wheat → 1 bread (replaces vanilla craft)  
-🔥 Netherrack furnace fuel (300 ticks)  
-📦 Nether recipes: Shulker Box (Netherrack + Chest) · Ender Chest (Blackstone + Chest)
+- Left-click mature crops with a hoe to harvest and replant (consumes 1 seed).
+- VeinMiner integration: replants crops after VeinMiner area harvests.
+- Custom composting: meat, cooked food, feathers, golden apples, etc.
+- Furnace bread recipe replaces vanilla crafting (1 wheat in furnace -> 1 bread).
+- Nether recipes: Shulker Box (Chest + 8 Netherrack), Ender Chest (Chest + 8 Blackstone).
+- Netherrack furnace fuel (300 ticks).
 
-For details on requirements and configuration, see [`plugin.yml`](src/main/resources/plugin.yml).
+## Requirements
 
-## VeinMiner Integration
+- Minecraft: 26.2
+- Server: Paper 26.2 build 40
+- Paper API: 26.2.build.40-alpha
+- Java runtime: 25+, compiler target: 21
+- Optional: [VeinMiner 2.4.0](https://github.com/2008Choco/VeinMiner) for area replanting
 
-VeinMiner is optional but highly recommended for mass crop replanting. When VeinMiner's Hoe category harvests mature crops, HappyFarmer replants every affected block using seeds from the player's inventory.
+## Installation
 
-[VeinMiner on GitHub](https://github.com/2008Choco/VeinMiner)
+1. Download happyfarmer-v0.5.jar from [Releases](https://github.com/danielchen666/HappyFarmer/releases).
+2. Place in plugins/.
+3. Restart the server.
 
-## Build & Install
+## Build
 
 ```bash
-git clone https://github.com/danielchen666/HappyFarmer.git && cd HappyFarmer && mvn package
+git clone https://github.com/danielchen666/HappyFarmer.git
+cd HappyFarmer
+mvn package
 ```
 
-Place `target/happyfarmer-v0.5.jar` in `plugins/` and restart the server.
+Compiled jar: `target/happyfarmer-v0.5.jar`.
 
 ## License
 
-MIT – see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE).
