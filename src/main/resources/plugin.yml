@@ -2,4 +2,5 @@ name: HappyFarmer
 version: '${project.version}'
 main: me.happyfarmer.HappyFarmer
 api-version: '1.21'
-description: Right-click crops with a hoe to harvest and replant. Custom composting recipes.
+softdepend: [VeinMiner]
+description: Left-click crop replanting, VeinMiner compatibility, custom composting, furnace bread, nether recipes, and netherrack fuel.
