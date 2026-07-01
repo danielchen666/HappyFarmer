@@ -1,0 +1,5 @@
+name: HappyFarmer
+version: '${project.version}'
+main: me.happyfarmer.HappyFarmer
+api-version: '1.21'
+description: Right-click crops with a hoe to harvest and replant. Only player-placed saplings grow into trees. Custom composting recipes.
