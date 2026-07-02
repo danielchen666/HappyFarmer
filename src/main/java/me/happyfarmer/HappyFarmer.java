@@ -10,7 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class HappyFarmer extends JavaPlugin {
 
     private NamespacedKey breadFurnaceKey;
-    private NetherRecipeListener netherRecipeListener;
+    private NextGenRecipeListener nextGenRecipeListener;
 
     @Override
     public void onEnable() {
@@ -23,8 +23,8 @@ public class HappyFarmer extends JavaPlugin {
             }
         }
 
-        netherRecipeListener = new NetherRecipeListener(this);
-        getServer().getPluginManager().registerEvents(netherRecipeListener, this);
+        nextGenRecipeListener = new NextGenRecipeListener(this);
+        getServer().getPluginManager().registerEvents(nextGenRecipeListener, this);
 
         Bukkit.removeRecipe(NamespacedKey.minecraft("bread"));
 
@@ -37,12 +37,12 @@ public class HappyFarmer extends JavaPlugin {
                 200
         );
         Bukkit.addRecipe(breadRecipe);
-        netherRecipeListener.addRecipes();
+        nextGenRecipeListener.addRecipes();
 
         getLogger().info("HappyFarmer has been enabled!");
         getLogger().info("Removed vanilla bread crafting recipe.");
         getLogger().info("Added furnace recipe: 1 wheat -> 1 bread (200 ticks, 0.35 XP).");
-        getLogger().info("Added nether recipes and netherrack furnace fuel.");
+        getLogger().info("Added NextGen recipes, including Rice Balls and netherrack smelting.");
     }
 
     @Override
@@ -50,8 +50,8 @@ public class HappyFarmer extends JavaPlugin {
         if (breadFurnaceKey != null) {
             Bukkit.removeRecipe(breadFurnaceKey);
         }
-        if (netherRecipeListener != null) {
-            netherRecipeListener.removeRecipes();
+        if (nextGenRecipeListener != null) {
+            nextGenRecipeListener.removeRecipes();
         }
         Bukkit.resetRecipes();
         getLogger().info("HappyFarmer has been disabled! Recipes reset to vanilla.");
